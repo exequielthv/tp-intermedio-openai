@@ -1,0 +1,485 @@
+
+/* Estilos generales */
+
+* {
+    box-sizing: border-box;
+}
+
+body {
+    margin: 0;
+    font-family: 'Inter', sans-serif;
+    background-color: #000000;
+}
+
+
+/* Encabezado */
+
+header {
+    position: sticky;
+    top: 0;
+    z-index: 1000;
+    background-color: #000000;
+    padding: 12px 24px;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+nav a {
+    color: white;
+    text-decoration: none;
+}
+
+.logo {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    font-weight: bold;
+    flex-shrink: 0;
+}
+
+.logo img {
+    width: 42px;
+    height: 42px;
+    display: block;
+}
+
+.menu {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    font-size: 14px;
+}
+
+.buscar {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    color: white;
+    border: none;
+    cursor: pointer;
+    padding: 8px;
+}
+
+.acciones {
+    display: flex;
+    align-items: center;
+    gap: 15px;
+    margin-left: auto;
+}
+
+.boton-prueba {
+    display: inline-flex;
+    align-items: center;
+    gap: 6px;
+    background-color: #242424;
+    color: white;
+    padding: 10px 16px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+.boton-contacto {
+    background-color: white;
+    color: black;
+    padding: 10px 16px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+/* Menú para pantallas más chicas */
+
+.controles-movil {
+    display: none;
+    align-items: center;
+    gap: 20px;
+}
+
+.controles-movil button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    background: transparent;
+    border: none;
+    color: white;
+    font-size: 22px;
+    cursor: pointer;
+    padding: 6px;
+}
+
+
+/* Primera sección */
+
+.hero {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+    background-color: #000000;
+    color: white;
+    padding: 80px 24px;
+}
+
+.hero-texto,
+.hero-imagen {
+    flex: 1;
+    min-width: 0;
+}
+
+.hero-imagen img {
+    display: block;
+    width: 100%;
+    height: auto;
+    border-radius: 8px;
+}
+
+.hero-etiqueta {
+    font-size: 14px;
+    margin: 0 0 24px;
+}
+
+.hero h1 {
+    font-size: 56px;
+    font-weight: 500;
+    line-height: 1.1;
+    letter-spacing: -2px;
+    margin: 0 0 24px;
+}
+
+.hero-descripcion {
+    font-size: 16px;
+    line-height: 1.6;
+    max-width: 520px;
+}
+
+.hero-botones {
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    gap: 12px;
+    margin-top: 28px;
+}
+
+.hero-botones a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding: 12px 20px;
+    border-radius: 30px;
+    text-decoration: none;
+    font-size: 14px;
+    text-align: center;
+}
+
+.hero-boton-principal {
+    background-color: white;
+    color: black;
+}
+
+.hero-boton-secundario {
+    background-color: #242424;
+    color: white;
+}
+
+
+/* Productos y tarjetas */
+
+.soluciones {
+    background-color: #000000;
+    color: white;
+    padding: 70px 24px 80px;
+}
+
+.soluciones h2 {
+    text-align: center;
+    font-size: 36px;
+    font-weight: 500;
+    line-height: 1.2;
+    margin: 0 0 20px;
+}
+
+.soluciones-descripcion {
+    text-align: center;
+    font-size: 16px;
+    line-height: 1.5;
+    max-width: 700px;
+    margin: 0 auto;
+}
+
+.soluciones-tarjetas {
+    display: flex;
+    align-items: stretch;
+    gap: 20px;
+    margin-top: 40px;
+}
+
+.tarjeta {
+    display: flex;
+    flex: 1;
+    flex-direction: column;
+    min-width: 0;
+    background-color: #1f1f1f;
+    border-radius: 12px;
+    padding: 16px;
+}
+
+.tarjeta img {
+    display: block;
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 8px;
+}
+
+.tarjeta h3 {
+    font-size: 22px;
+    font-weight: 600;
+    line-height: 1.3;
+    margin: 20px 0 8px;
+}
+
+.tarjeta .tarjeta-subtitulo {
+    font-size: 14px;
+    font-style: italic;
+    color: #dddddd;
+    line-height: 1.5;
+    margin: 0 0 16px;
+}
+
+.tarjeta ul {
+    padding-left: 20px;
+    margin: 0 0 24px;
+}
+
+.tarjeta li {
+    font-size: 14px;
+    line-height: 1.6;
+    margin-bottom: 10px;
+    color: #e0e0e0;
+}
+
+.tarjeta-boton {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    background-color: white;
+    color: black;
+    text-decoration: none;
+    padding: 12px 16px;
+    border-radius: 30px;
+    font-size: 14px;
+    text-align: center;
+    margin-top: auto;
+}
+
+
+/* Pie de página */
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 24px;
+    background-color: #000000;
+    color: white;
+    padding: 32px 24px;
+}
+
+.footer-redes {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer-redes a {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    font-size: 18px;
+}
+
+.footer-informacion {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+
+.footer a {
+    color: white;
+    text-decoration: none;
+    font-size: 13px;
+}
+
+.footer-informacion a {
+    text-decoration: underline;
+}
+
+.footer span {
+    font-size: 13px;
+}
+
+.footer-idioma {
+    display: flex;
+    align-items: center;
+    gap: 10px;
+    background-color: #242424;
+    padding: 12px 18px;
+    border-radius: 30px;
+    white-space: nowrap;
+}
+
+.footer-idioma span:last-child {
+    color: #999999;
+}
+
+
+/* Márgenes de la página */
+
+main {
+    width: calc(100% - 48px);
+    max-width: 1376px;
+    margin: 0 auto;
+}
+
+
+/* Adaptación a diferentes pantallas */
+
+@media (max-width: 1280px) {
+
+    .menu,
+    .acciones {
+        display: none;
+    }
+
+    .buscar {
+        margin-left: auto;
+    }
+
+    .controles-movil {
+        display: flex;
+    }
+
+    header {
+        padding: 12px 16px;
+    }
+}
+
+
+@media (max-width: 900px) {
+
+    .hero {
+        flex-direction: column;
+        padding: 40px 16px;
+        gap: 32px;
+    }
+
+    .hero-texto,
+    .hero-imagen {
+        width: 100%;
+        flex: auto;
+    }
+
+    .hero h1 {
+        font-size: 38px;
+        letter-spacing: -1px;
+    }
+
+    .hero-botones {
+        flex-direction: column;
+        align-items: center;
+        gap: 12px;
+    }
+
+    .hero-botones a {
+        max-width: 100%;
+    }
+
+    .soluciones {
+        padding: 40px 16px;
+    }
+
+    .soluciones-tarjetas {
+        flex-direction: column;
+    }
+
+    .tarjeta {
+        width: 100%;
+    }
+
+    .tarjeta h3 {
+        font-size: 24px;
+    }
+
+    .tarjeta .tarjeta-subtitulo {
+        font-size: 16px;
+    }
+
+    .tarjeta li {
+        font-size: 16px;
+    }
+}
+
+
+@media (max-width: 767px) {
+
+    .footer {
+        flex-direction: column;
+        align-items: center;
+        gap: 32px;
+        padding: 40px 16px;
+    }
+
+    .footer-redes {
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 24px;
+    }
+
+    .footer-informacion {
+        flex-direction: row;
+        justify-content: center;
+        flex-wrap: wrap;
+        gap: 12px;
+        text-align: center;
+    }
+
+    .footer-idioma {
+        justify-content: center;
+        max-width: 100%;
+    }
+
+    main {
+        width: calc(100% - 24px);
+    }
+}
+
+
+/* Ajustes para celulares */
+
+@media (max-width: 480px) {
+
+    .hero h1 {
+        font-size: 34px;
+    }
+
+    .soluciones h2 {
+        font-size: 30px;
+    }
+
+    .soluciones-descripcion {
+        font-size: 15px;
+    }
+
+    .tarjeta {
+        padding: 16px;
+    }
+
+    .tarjeta li {
+        font-size: 15px;
+    }
+}
